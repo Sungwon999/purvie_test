@@ -20,6 +20,13 @@ class App extends Component {
     this.scrollParentRef = null;
     this.current_page = 1;
     this.hdlAddListTimer = null;
+    
+    // 한 페이지에 출력할 갯수를 데탑일 경우 10개로, 모바일일 경우 9로 설정한다.
+    this.item_per_page = 9;
+    if(!this.isMobile())
+    {
+      this.item_per_page = 10;
+    }
 
     // 팝업 화면 노출 여부와 값
     this.state = {
@@ -27,6 +34,24 @@ class App extends Component {
       , hasMore : false
       , movie_data : {}
     };
+  }
+
+  /**
+   * 모바일 여부 체크 
+   */
+  isMobile()
+  {
+    var UserAgent = navigator.userAgent;
+  
+    if (UserAgent.match(/iPhone|iPod|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|nokia|SonyEricsson/i) != null 
+      || UserAgent.match(/LG|SAMSUNG|Samsung/) != null)
+    {
+      return true;
+    }
+    else
+    {
+      return false;
+    }
   }
 
   /**
@@ -85,6 +110,9 @@ class App extends Component {
         divMovieList.appendChild(divMovie);
       }
     }
+    
+    // 추가 활동 끝을 알리기 위한 초기화
+    THIS.hdlAddListTimer = null;
   }
   /**
    * 영화 상세정보를 출력한다.
@@ -137,7 +165,7 @@ class App extends Component {
     {  
       this.ldrMovieData.search_condition.genre = strGenre;
     }
-    this.ldrMovieData.search_condition.item_per_page = 9;
+    this.ldrMovieData.search_condition.item_per_page = THIS.item_per_page;
     this.ldrMovieData.search_condition.current_page = THIS.current_page;
     this.ldrMovieData.getMovieList().then(function(arrMovieData)
       {
@@ -162,17 +190,21 @@ class App extends Component {
   {
     const THIS = this;
 
-    var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
+    var scrollTop = Math.round((document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop);
     var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
     var clientHeight = document.documentElement.clientHeight || window.innerHeight;
-    var scrolledToBottom = Math.floor(scrollTop + clientHeight) >= scrollHeight;
-    scrollTop = Math.round(scrollTop);
-    
-    let divConsole = document.getElementById("div_console");
-    divConsole.innerHTML = ("scrollTop : " + scrollTop 
-                        + ", clientHeight : " + clientHeight
-                        + ", scrollHeight : " + scrollHeight);
+    var scrolledToBottom = false;
 
+    // 모바일일 경우 주소창 크기만큼(56) scrollHeight에서 빼준다.
+    if(this.isMobile())
+    {
+      scrollHeight = scrollHeight - 56
+    }
+
+    // 스크롤 최하단 여부를 판단한다.
+    scrolledToBottom = Math.ceil(scrollTop + clientHeight) >= scrollHeight;
+    
+    // 맨위로 버튼 출력 여부
     if(scrollTop > 500)
     {
       THIS.showClickTopButton();
@@ -182,7 +214,8 @@ class App extends Component {
       THIS.hiddenClickTopButton();
     }
     
-    if(scrolledToBottom)
+    // 최하단이고 리스트 재요청 중이 아닌 경우 추가 리스트를 요청한다.
+    if(scrolledToBottom && THIS.hdlAddListTimer == null)
     {
       THIS.hdlAddListTimer = setTimeout(function()
         { 
@@ -261,7 +294,6 @@ class App extends Component {
   render()
   {
     return (
-      
       <div className="div_app_main">
         {
           this.state.showPopup ?
@@ -270,9 +302,6 @@ class App extends Component {
               closePopup={this.togglePopup.bind(this)}/> 
             : null
         }
-        <div id="div_console" className="console">
-          debug
-        </div>
         <div className="movie_infinite_list">
           <InfiniteScroll
             pageStart={0}
