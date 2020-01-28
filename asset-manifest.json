@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/purvie_test/static/css/main.becb87fe.chunk.css",
+    "main.css": "/purvie_test/static/css/main.ed6b694e.chunk.css",
     "main.js": "/purvie_test/static/js/main.a8ba046f.chunk.js",
     "main.js.map": "/purvie_test/static/js/main.a8ba046f.chunk.js.map",
     "runtime-main.js": "/purvie_test/static/js/runtime-main.055ac6aa.js",
@@ -8,9 +8,9 @@
     "static/js/2.e673c8b2.chunk.js": "/purvie_test/static/js/2.e673c8b2.chunk.js",
     "static/js/2.e673c8b2.chunk.js.map": "/purvie_test/static/js/2.e673c8b2.chunk.js.map",
     "index.html": "/purvie_test/index.html",
-    "precache-manifest.25a4c85a58af69056e4efad0b06af379.js": "/purvie_test/precache-manifest.25a4c85a58af69056e4efad0b06af379.js",
+    "precache-manifest.81d3d9814058639afb77343cf0896c79.js": "/purvie_test/precache-manifest.81d3d9814058639afb77343cf0896c79.js",
     "service-worker.js": "/purvie_test/service-worker.js",
-    "static/css/main.becb87fe.chunk.css.map": "/purvie_test/static/css/main.becb87fe.chunk.css.map",
+    "static/css/main.ed6b694e.chunk.css.map": "/purvie_test/static/css/main.ed6b694e.chunk.css.map",
     "static/js/2.e673c8b2.chunk.js.LICENSE": "/purvie_test/static/js/2.e673c8b2.chunk.js.LICENSE",
     "static/media/MovieDetailPopup.css": "/purvie_test/static/media/dovemayo.6b11a4c3.otf",
     "static/media/logo-square.png": "/purvie_test/static/media/logo-square.e5a5e9c2.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.055ac6aa.js",
     "static/js/2.e673c8b2.chunk.js",
-    "static/css/main.becb87fe.chunk.css",
+    "static/css/main.ed6b694e.chunk.css",
     "static/js/main.a8ba046f.chunk.js"
   ]
 }
