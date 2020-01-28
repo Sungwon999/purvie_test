@@ -1,0 +1,200 @@
+@font-face {font-family: Typo_SsangmunDongB; src: url('./fonts/Typo_SsangmunDongB.ttf');}
+@font-face {font-family: dovemayo; src: url('./fonts/dovemayo.otf');}
+@font-face {font-family: NanumSquare_acR; src: url('./fonts/NanumSquare_acR.ttf');}
+@font-face {font-family: NanumSquare_acB; src: url('./fonts/NanumSquare_acB.ttf');}
+
+body {
+    font-size: 1.5vw;
+    transition: all 500ms;
+}
+
+/* Menu.js properties*/
+.menu_header
+{
+    width: 100%;
+    height: 6vw;
+    padding-top: 6vw;
+    margin: auto;   
+}
+
+.menu_head {
+    width: 22%;
+    height: 100%;
+    float: left;
+}
+
+.menu_icon {
+    float: left;
+    padding-left: 5vw;
+}
+.img_title_icon {
+    width: 4.5vw;
+    height: 4.5vw;
+    position : relative;
+}
+.menu_title {
+    color : #ffffff;
+    font-size: 3vw;
+    padding-top: 0.5vw;
+    font-weight: bolder;
+    font-family : "dovemayo";
+    position : relative;
+    float: left;
+}
+
+
+.menu1 {
+    width: 47%;
+    height: 100%;
+    float: left;
+}
+
+
+.search_group
+{
+    width: 30%;
+    height: 100%;
+    float: left;
+}
+.search {
+    width: 23vw;
+    height: 3vw;
+    margin-top: 3px;
+    margin-right: 15%;
+    box-shadow: 0px 0px 7px 1px #666;
+    border-radius: 12px;
+    float: right;
+}
+.search_input {
+    width: 100%;
+    height: 100%;
+    padding-left: 15px;
+    background: transparent;
+    font-family: "NanumSquare_acR";
+    border: none;
+    outline: none;
+    color: #ddd;
+    font-size: 1.5vw;
+}
+
+/* Menu2.js properties*/
+#rdiv {
+    height: 20vw;
+    padding: 1vw 1vw 1vw;
+    margin: 1vw 4vw 2vw;
+    box-shadow: 0px 0px 10px 2px #222;
+    color: white;
+    white-space: nowrap;
+    clear: both;
+}
+#Ldiv {
+    float: left;
+}
+#Rdiv {
+    width: 70vw;
+    height: 95%;
+    float: left;
+    padding: 1vw 3vw 1vw;
+    overflow-x: scroll;
+}
+
+.movie_image {
+    height: 20vw;
+    box-shadow: 0px 0px 15px 3px #111;
+}
+
+.title_div {
+    width: 100%;
+    height: 3.5%;
+    font-size: 2.5vw;
+    white-space: nowrap;
+    font-family: "Typo_SsangmunDongB";
+    position: absolute;
+    padding-top: 1.0vw;
+    z-index: 10;
+}
+.actor_div {
+    height: 15%;
+    font-size: 0.5vw;
+    font-family: "NanumSquare_acR";
+    position: sticky;
+    float: left;
+    padding-right: 0.8vw;
+}
+.review_div {
+    width: 100%;
+    height: 45%;
+    font-family: "dovemayo";
+    font-size: 1.6vw;
+    color: #fff;
+    position: relative;
+    clear: both;
+    padding-top: 3.0vw;
+    z-index: 1;
+    overflow: scroll;
+}
+.review_title {
+    float: left;
+    height: 15%;
+}
+.review_title:hover {
+    font-weight: bold;
+}
+.review_id {
+    height: 15%;
+    font-size: 1vw;
+    color: #bbb;
+    margin-top: 0.5vw;
+    margin-left: 1.5vw;
+    float: left;
+}
+.review_context {
+    clear: both;
+    color: #ddd;
+    font-size: 1.5vw;
+    margin-left: 0.5vw;
+    white-space: pre-line;
+}
+
+.loading {
+    position: fixed;
+    top: 40vw;
+    left: calc(50vw - 20px);
+}
+
+@media (max-width: 500px) {
+    body { font-size: 2.7vw; transition: all 500ms; }
+    .menu_header { height: 10vw; padding-top: 6%;}
+    .menu_head { width: 33%; height: 12vw; }
+    .img_title_icon { width: 7vw; height: 7vw; }
+    .menu_title { font-size: 5vw; padding-top: 4%; }
+    .search_group { display: none; }
+    #rdiv { width: 90vw; min-height: 40vw; margin-top: 3%; }
+    #Rdiv { margin: 1% 1% 1%; width: 50vw; }
+    .movie_image { min-height: 40vw; }
+    .title_div { font-size: 3.5vw; }
+    .review_title { height: 1vw; }
+    .review_id { font-size: 1vw; }
+    .review_context { font-size: 7px;}
+}
+
+@media (min-width: 900px) {
+    body { font-size: 12px; transition: all 500ms; }
+    .menu_header { width: 900px; height: 80px; padding-top: 36px; }
+    .menu_head { width: 200px; }
+    .menu_title { font-size: 27px;}
+    .menu_icon { padding-left: 45px;}
+    .img_title_icon { width: 40px; height: 40px; }
+    .menu1 { width: 420px; }
+    .search_group { width: 270px; }
+    .search { width: 210px; height: 27px; }
+    .search_input { font-size: 13px;}
+    #rdiv { width: 810px; max-height: 200px; margin: auto; }
+    #Rdiv { width: 500px; padding: 9px; }
+    .movie_image { max-height: 200px; }
+    .title_div { font-size: 22px; }
+    .review_title { font-size: 14px; }
+    .review_id { font-size: 9px; }
+    .review_context { font-size: 14px;}
+    .loading { top: 360px; }
+}
