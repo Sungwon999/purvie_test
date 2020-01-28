@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "73d72d81b14d0fbaf5a4b683e3f95c5e",
+    "revision": "3f91be92890b723137694ff90c20d8e7",
     "url": "/purvie_test/index.html"
   },
   {
-    "revision": "7fce700b9ad0432c7326",
-    "url": "/purvie_test/static/css/main.a17c8a55.chunk.css"
+    "revision": "83f66a04593a626eef24",
+    "url": "/purvie_test/static/css/main.becb87fe.chunk.css"
   },
   {
     "revision": "bf84c805299128885927",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/purvie_test/static/js/2.e673c8b2.chunk.js.LICENSE"
   },
   {
-    "revision": "7fce700b9ad0432c7326",
-    "url": "/purvie_test/static/js/main.7b4c3d1a.chunk.js"
+    "revision": "83f66a04593a626eef24",
+    "url": "/purvie_test/static/js/main.f6ea4cda.chunk.js"
   },
   {
     "revision": "7c047320e71003ee12a1",

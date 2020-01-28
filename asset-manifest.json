@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/purvie_test/static/css/main.a17c8a55.chunk.css",
-    "main.js": "/purvie_test/static/js/main.7b4c3d1a.chunk.js",
-    "main.js.map": "/purvie_test/static/js/main.7b4c3d1a.chunk.js.map",
+    "main.css": "/purvie_test/static/css/main.becb87fe.chunk.css",
+    "main.js": "/purvie_test/static/js/main.f6ea4cda.chunk.js",
+    "main.js.map": "/purvie_test/static/js/main.f6ea4cda.chunk.js.map",
     "runtime-main.js": "/purvie_test/static/js/runtime-main.055ac6aa.js",
     "runtime-main.js.map": "/purvie_test/static/js/runtime-main.055ac6aa.js.map",
     "static/js/2.e673c8b2.chunk.js": "/purvie_test/static/js/2.e673c8b2.chunk.js",
     "static/js/2.e673c8b2.chunk.js.map": "/purvie_test/static/js/2.e673c8b2.chunk.js.map",
     "index.html": "/purvie_test/index.html",
-    "precache-manifest.625c23e54ff5356e32b722ed536a62b6.js": "/purvie_test/precache-manifest.625c23e54ff5356e32b722ed536a62b6.js",
+    "precache-manifest.32b741a4e3913afe0e83a1ecece9a1bb.js": "/purvie_test/precache-manifest.32b741a4e3913afe0e83a1ecece9a1bb.js",
     "service-worker.js": "/purvie_test/service-worker.js",
-    "static/css/main.a17c8a55.chunk.css.map": "/purvie_test/static/css/main.a17c8a55.chunk.css.map",
+    "static/css/main.becb87fe.chunk.css.map": "/purvie_test/static/css/main.becb87fe.chunk.css.map",
     "static/js/2.e673c8b2.chunk.js.LICENSE": "/purvie_test/static/js/2.e673c8b2.chunk.js.LICENSE",
     "static/media/MovieDetailPopup.css": "/purvie_test/static/media/dovemayo.6b11a4c3.otf",
     "static/media/logo-square.png": "/purvie_test/static/media/logo-square.e5a5e9c2.png"
@@ -18,7 +18,7 @@
   "entrypoints": [
     "static/js/runtime-main.055ac6aa.js",
     "static/js/2.e673c8b2.chunk.js",
-    "static/css/main.a17c8a55.chunk.css",
-    "static/js/main.7b4c3d1a.chunk.js"
+    "static/css/main.becb87fe.chunk.css",
+    "static/js/main.f6ea4cda.chunk.js"
   ]
 }
