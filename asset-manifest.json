@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/purvie_test/static/css/main.ed6b694e.chunk.css",
-    "main.js": "/purvie_test/static/js/main.94a156e3.chunk.js",
-    "main.js.map": "/purvie_test/static/js/main.94a156e3.chunk.js.map",
+    "main.js": "/purvie_test/static/js/main.1df1f6e4.chunk.js",
+    "main.js.map": "/purvie_test/static/js/main.1df1f6e4.chunk.js.map",
     "runtime-main.js": "/purvie_test/static/js/runtime-main.055ac6aa.js",
     "runtime-main.js.map": "/purvie_test/static/js/runtime-main.055ac6aa.js.map",
     "static/js/2.e673c8b2.chunk.js": "/purvie_test/static/js/2.e673c8b2.chunk.js",
     "static/js/2.e673c8b2.chunk.js.map": "/purvie_test/static/js/2.e673c8b2.chunk.js.map",
     "index.html": "/purvie_test/index.html",
-    "precache-manifest.1362a6538d71c05ad979d534e68a1fb2.js": "/purvie_test/precache-manifest.1362a6538d71c05ad979d534e68a1fb2.js",
+    "precache-manifest.9d57f5b03a1e8d7c47ebcfbf7ee8eca4.js": "/purvie_test/precache-manifest.9d57f5b03a1e8d7c47ebcfbf7ee8eca4.js",
     "service-worker.js": "/purvie_test/service-worker.js",
     "static/css/main.ed6b694e.chunk.css.map": "/purvie_test/static/css/main.ed6b694e.chunk.css.map",
     "static/js/2.e673c8b2.chunk.js.LICENSE": "/purvie_test/static/js/2.e673c8b2.chunk.js.LICENSE",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.055ac6aa.js",
     "static/js/2.e673c8b2.chunk.js",
     "static/css/main.ed6b694e.chunk.css",
-    "static/js/main.94a156e3.chunk.js"
+    "static/js/main.1df1f6e4.chunk.js"
   ]
 }
