@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/purvie_test/precache-manifest.4392dd08597d499ba97aa5486b2fbc27.js"
+  "/purvie_test/precache-manifest.a81a904792f97c254cbed5cc2f9e30af.js"
 );
 
 self.addEventListener('message', (event) => {
