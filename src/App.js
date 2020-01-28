@@ -166,7 +166,8 @@ class App extends Component {
     var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
     var clientHeight = document.documentElement.clientHeight || window.innerHeight;
     var scrolledToBottom = Math.floor(scrollTop + clientHeight) >= scrollHeight;
-
+    scrollTop = Math.round(scrollTop);
+    
     let divConsole = document.getElementById("div_console");
     divConsole.innerHTML = ("scrollTop : " + scrollTop 
                         + ", clientHeight : " + clientHeight
