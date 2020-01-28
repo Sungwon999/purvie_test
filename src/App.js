@@ -167,6 +167,11 @@ class App extends Component {
     var clientHeight = document.documentElement.clientHeight || window.innerHeight;
     var scrolledToBottom = Math.floor(scrollTop + clientHeight) >= scrollHeight;
 
+    let divConsole = document.getElementById("div_console");
+    divConsole.innerHTML = ("scrollTop : " + scrollTop 
+                        + ", clientHeight : " + clientHeight
+                        + ", scrollHeight : " + scrollHeight);
+
     if(scrollTop > 500)
     {
       THIS.showClickTopButton();
@@ -178,8 +183,6 @@ class App extends Component {
     
     if(scrolledToBottom)
     {
-      let divConsole = document.getElementById("div_console");
-      divConsole.innerHTML = scrollTop;
       THIS.hdlAddListTimer = setTimeout(function()
         { 
           THIS.setState(
