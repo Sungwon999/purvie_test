@@ -165,7 +165,7 @@ class App extends Component {
     var scrollTop = (document.documentElement && document.documentElement.scrollTop) || document.body.scrollTop;
     var scrollHeight = (document.documentElement && document.documentElement.scrollHeight) || document.body.scrollHeight;
     var clientHeight = document.documentElement.clientHeight || window.innerHeight;
-    var scrolledToBottom = Math.ceil(scrollTop + clientHeight) >= scrollHeight;
+    var scrolledToBottom = Math.floor(scrollTop + clientHeight) >= scrollHeight;
 
     if(scrollTop > 500)
     {
@@ -178,6 +178,8 @@ class App extends Component {
     
     if(scrolledToBottom)
     {
+      let divConsole = document.getElementById("div_console");
+      divConsole.innerHTML = scrollTop;
       THIS.hdlAddListTimer = setTimeout(function()
         { 
           THIS.setState(
@@ -255,6 +257,7 @@ class App extends Component {
   render()
   {
     return (
+      
       <div className="div_app_main">
         {
           this.state.showPopup ?
@@ -263,6 +266,9 @@ class App extends Component {
               closePopup={this.togglePopup.bind(this)}/> 
             : null
         }
+        <div id="div_console" className="console">
+          debug
+        </div>
         <div className="movie_infinite_list">
           <InfiniteScroll
             pageStart={0}

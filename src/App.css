@@ -94,6 +94,11 @@
   overflow:auto;
 }
 
+.console
+{
+  position:fixed;
+  top:0;
+}
 .app_click_top
 {
   width:100%;
